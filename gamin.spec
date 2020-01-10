@@ -1,7 +1,7 @@
 Summary: Library providing the FAM File Alteration Monitor API
 Name: gamin
 Version: 0.1.10
-Release: 14%{?dist}
+Release: 16%{?dist}
 License: LGPLv2
 #some of the files (server/inotify-kernel.c) are GPLv2
 #so https://fedoraproject.org/wiki/Licensing#GPL_Compatibility_Matrix
@@ -119,6 +119,12 @@ find $RPM_BUILD_ROOT -name '*.la' -or -name '*.a' | xargs rm -f
 %doc doc/python.html
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.1.10-16
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.1.10-15
+- Mass rebuild 2013-12-27
+
 * Fri Feb  1 2013 Matthias Clasen <mclasen@redhat.com> - 0.1.10-14
 - Make it work on nfs4
 - Fix the build
